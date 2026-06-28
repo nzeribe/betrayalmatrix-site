@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Betrayal Matrix — a chess engine for relationships</title>
+<style>
+  :root{
+    --bg:#0b0b0c; --ink:#e8e4dc; --mute:#8a857c; --line:#23211e;
+    --blood:#7c1d1d; --bloodlit:#a83232;
+    --serif:Georgia,"Times New Roman",serif;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.6}
+  body{
+    background-image:
+      radial-gradient(120% 80% at 50% -10%, #15140f 0%, var(--bg) 55%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.035'/></svg>");
+    background-attachment:fixed;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 28px}
+  .mono{font-family:var(--mono);letter-spacing:.18em;text-transform:uppercase;font-size:.7rem;color:var(--mute)}
+  hr{border:0;border-top:1px solid var(--line);margin:60px 0}
+  header{padding:92px 0 60px;text-align:center}
+  .kicker{margin-bottom:26px}
+  h1{font-family:var(--mono);font-weight:400;letter-spacing:.34em;font-size:1.9rem;margin:0 0 18px;color:#f3efe7}
+  .tag{font-style:italic;font-size:1.5rem;margin:0 0 28px}
+  .logline{font-size:1.12rem;color:#cfcabf;max-width:620px;margin:0 auto 40px}
+  .blood{color:var(--bloodlit)}
+  .cta{display:inline-block;font-family:var(--mono);text-transform:uppercase;letter-spacing:.16em;font-size:.82rem;
+       color:#f3efe7;border:1px solid var(--bloodlit);padding:16px 26px;text-decoration:none;background:#140d0d;transition:.2s}
+  .cta:hover{background:var(--blood)}
+  .cta small{color:var(--mute);font-size:.68rem;display:block;margin-top:6px;letter-spacing:.1em}
+  section{padding:6px 0}
+  h2{font-family:var(--mono);font-weight:400;letter-spacing:.2em;text-transform:uppercase;font-size:.82rem;color:var(--mute);margin:0 0 22px}
+  p{margin:0 0 18px;font-size:1.06rem}
+  .lead{font-size:1.18rem;color:#ddd8cd}
+  ol.steps{list-style:none;counter-reset:s;padding:0;margin:0}
+  ol.steps li{counter-increment:s;padding:18px 0 18px 54px;position:relative;border-top:1px solid var(--line)}
+  ol.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:18px;font-family:var(--mono);color:var(--bloodlit);font-size:.9rem}
+  ol.steps b{color:#f3efe7}
+  .exhibit{border-top:1px solid var(--line);padding:20px 0}
+  .exhibit .who{font-family:var(--mono);letter-spacing:.14em;font-size:.72rem;color:var(--mute);text-transform:uppercase;display:block;margin-bottom:8px}
+  .exhibit .read{font-size:1.12rem;font-style:italic;color:#ded9ce}
+  .get{list-style:none;padding:0;margin:0}
+  .get li{padding:12px 0;border-top:1px solid var(--line);font-style:italic;color:#cfcabf}
+  .get b{font-style:normal;color:#f3efe7}
+  footer{padding:64px 0 90px;text-align:center;color:var(--mute)}
+  .fine{font-size:.8rem;color:#6f6a62;max-width:600px;margin:22px auto 0;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker mono">Cold War Room · the game theory of betrayal</div>
+    <h1>BETRAYAL&nbsp;MATRIX</h1>
+    <p class="tag">A chess engine for relationships.</p>
+    <p class="logline">You tell it what's going on, and instead of being kind about it, it coldly works out who's likely to <span class="blood">betray</span> whom, when, and what your smartest move is.</p>
+    <a class="cta" href="#order">Run my case<small>£99 · written assessment</small></a>
+  </header>
+
+  <hr>
+
+  <section>
+    <h2>The promise</h2>
+    <p class="lead">The one place that tells you what the maths says — not what you want to hear.</p>
+    <p>Every friend, every forum, every therapist gives you sympathy or slogans. The model gives you the <b>move</b>. It treats your situation as what it actually is — a game, with real moves, real payoffs, and an optimal play — and runs the numbers cold. No comfort, no blame, no taking sides. Just: here is what is happening, here is what is coming, and here is the smartest thing you can do about it.</p>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>It proves itself first</h2>
+    <p>Before you trust it with your own life, watch it work on people you already have an opinion about — and get the cold read that's usually the opposite of the headline.</p>
+    <div class="exhibit"><span class="who">Exhibit · Will Smith</span><span class="read">The slap was never the problem. The marriage was already over; he was defending a picture.</span></div>
+    <div class="exhibit"><span class="who">Exhibit · Diana, Princess of Wales</span><span class="read">She held a winning hand — and the one thing she wanted was the one thing that would kill her.</span></div>
+    <div class="exhibit"><span class="who">Exhibit · Piers Morgan</span><span class="read">He didn't lose the argument. He was playing a square that was never his to win.</span></div>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><b>Tell us what's happening.</b> A short, private intake — the situation, the people, the tells. In your own words.</li>
+      <li><b>The model runs it.</b> Cold. Five mechanisms, an honest read of the payoffs, no thumb on the scale.</li>
+      <li><b>You get your verdict.</b> Who's playing whom, what's coming, your best move — and the cost of doing nothing. In 3–5 days.</li>
+    </ol>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>What you get</h2>
+    <ul class="get">
+      <li><b>Are you crazy?</b> — a straight answer on whether your read is right.</li>
+      <li><b>What's actually happening</b> — the structure under the story.</li>
+      <li><b>Your move</b> — one concrete thing you can do this week.</li>
+      <li><b>The cost</b> — what it's costing you to keep doing nothing.</li>
+      <li><b>Your matrix &amp; four futures</b> — the board, drawn for your case.</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <section id="order" style="text-align:center">
+    <h2>Run your case</h2>
+    <p class="lead" style="margin-bottom:30px">One situation. One cold, honest read. £99.</p>
+    <a class="cta" href="PASTE_YOUR_STRIPE_PAYMENT_LINK_HERE">Begin — £99<small>private · 3–5 days</small></a>
+  </section>
+
+  <footer>
+    <p class="mono" style="letter-spacing:.2em">The only thing that's real is the maths.</p>
+    <p class="fine">Betrayal Matrix is structural analysis and entertainment — a game-theoretic read of relationship dynamics. It describes incentives and probabilities, not certainties about any individual, and it is not therapy, medical, or legal advice. The persona is a declared fiction; the mathematics is not.</p>
+  </footer>
+
+</div>
+</body>
+</html>
